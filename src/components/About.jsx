@@ -1,13 +1,10 @@
 import React from 'react';
-import NavBar from './NavBar';
-import Footer from './Footer';
 import ABOUT_ICON from '../assets/about.svg';
 import { Link } from 'react-router-dom';
 
 export default function About(props) {
   return (
     <div className="about-root">
-      <NavBar />
       <div className="about-container">
         <img src={ABOUT_ICON} alt="about image" className="about-img" />
         <div className="about-info">
@@ -30,7 +27,6 @@ export default function About(props) {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
