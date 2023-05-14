@@ -318,3 +318,23 @@ button {
   padding: 10px;
   cursor: pointer;
 }
+.van-host-sub-routes {
+  margin-left: 20px;
+  width: fit-content;
+}
+
+.van-host-sub-routes {
+  margin-left: 20px;
+  width: fit-content;
+}
+.van-host-sub-routes > a{
+  font-size: 18px;
+  line-height: 23px;
+}
+.van-host-sub-routes .active{
+ text-decoration: underline;
+ font-weight: bold;
+}
+.van-host-sub-routes a:nth-child(n+2) {
+  margin-left: 40px;
+}

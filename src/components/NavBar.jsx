@@ -7,6 +7,7 @@ export default function NavBar(props) {
         <Link to='/'>#VANLIFE</Link>
       </span>
       <span className='right-navs'>
+        <Link to='/host'>Host</Link>
         <Link to='/about'>About</Link>
         <Link to='/vans'>Vans</Link>
       </span>
