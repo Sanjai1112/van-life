@@ -286,14 +286,20 @@ button {
   display: flex;
   flex-direction: column;
 }
-.van-full-details .vans-list-back {
+
+.van-full-details .vans-list-back,
+.host-van-full-details .vans-list-back {
   line-height: 23px;
   width: fit-content;
 }
-.van-full-details .vans-list-back span {
+
+.van-full-details .vans-list-back span,
+.host-van-full-details .vans-list-back span {
   text-decoration: underline;
 }
-.van-full-details .vans-list-back .left-arrow {
+
+.van-full-details .vans-list-back .left-arrow,
+.host-van-full-details .vans-list-back .left-arrow {
   font-size: 28px;
   color: #858585;
 }
@@ -305,6 +311,7 @@ button {
 .van-full-details .van-type {
   margin-top: 50px;
 }
+
 .van-full-details .van-description {
   font-family: 'Inter';
   font-style: normal;
@@ -312,29 +319,168 @@ button {
   font-size: 16px;
   line-height: 24px;
 }
+
 .van-full-details .van-rent-btn {
   background: #FF8C38;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
 }
-.van-host-sub-routes {
-  margin-left: 20px;
-  width: fit-content;
-}
 
 .van-host-sub-routes {
   margin-left: 20px;
+}
+
+.van-host-sub-routes {
   width: fit-content;
 }
-.van-host-sub-routes > a{
+
+.van-host-sub-routes>a {
   font-size: 18px;
   line-height: 23px;
 }
-.van-host-sub-routes .active{
- text-decoration: underline;
- font-weight: bold;
+
+a.active {
+  text-decoration: underline;
+  font-weight: bold;
 }
+
 .van-host-sub-routes a:nth-child(n+2) {
   margin-left: 40px;
+}
+
+.hot-vans {
+  margin-top: 60px;
+  padding: 0px 20px;
+}
+
+.hot-vans .header {
+  line-height: 34px;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.hot-vans .host-van-detail {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  padding: 20px;
+  background: #ffffff;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.hot-vans .host-van-detail:last-child {
+  margin-bottom: 80px;
+}
+
+.hot-vans .host-van-detail .host-van-img {
+  border-radius: 4px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.hot-vans .host-van-detail .host-van-name-price {
+  margin-left: 20px;
+  align-self: center;
+}
+
+.host-van-detail .host-van-name-price>h2 {
+  margin: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.host-van-detail .host-van-name-price>span {
+  margin-top: 8px;
+  color: #4D4D4D;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.host-van-full-details {
+  padding: 0px 20px;
+  margin-top: 80px;
+}
+
+.host-van-full-details .van-detail {
+  background: #ffffff;
+  margin-top: 30px;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 48px;
+}
+
+.host-van-full-details .van-detail .van-name-price img {
+  border-radius: 4px;
+  width: 240px;
+  height: 240px;
+}
+
+.host-van-full-details .van-name-price {
+  display: flex;
+}
+
+.host-van-full-details .van-name-price>span {
+  align-self: center;
+  margin-left: 20px;
+}
+
+.host-van-full-details .van-name-price>span>h1 {
+  margin: 0px;
+  font-size: 26px;
+  line-height: 27px;
+  margin-top: 16px;
+}
+
+.host-van-full-details .van-name-price>span>span {
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.host-van-full-details .van-name-price>span>span>i {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  line-height: 36px;
+}
+
+.host-van-full-details .van-detail .van-detail-link {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 21px;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+.host-van-full-details .van-detail .van-detail-link>a:nth-child(n+2) {
+  margin-left: 22px;
+  color: #4D4D4D;
+}
+
+.host-van-full-details .van-detail .van-detail-outlet {
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.host-van-full-details .van-detail .van-detail-index>div {
+  margin-top: 20px;
+}
+
+.host-van-full-details .van-detail .van-detail-index label {
+  font-weight: 700;
+}
+
+.host-van-full-details .van-detail .van-detail-index label~span {
+  margin-left: 8px;
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 export default function Van(props) {
-  const { id, name, price, imageUrl, type, key } = props;
+  const { id, name, price, imageUrl, type } = props;
   return (
-    <div className='van' key={key}>
+    <div className='van'>
       <Link to={`/vans/${id}`}>
         <img className='van-img' src={imageUrl} alt={name} id={id} />
         <div className='van-details'>
