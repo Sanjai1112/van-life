@@ -6,7 +6,7 @@ export default function HostVanDetailLayout() {
   const { id: vanId } = useParams();
   useEffect(() => {
     if (vanId) {
-      fetch(`/api/vans/${vanId}`)
+      fetch(`/api/host/vans/${vanId}`)
         .then((resp) => {
           if (resp.status === 200) {
             return resp.json();
@@ -21,7 +21,7 @@ export default function HostVanDetailLayout() {
   }, []);
   return (
     <div className='host-van-full-details'>
-      <Link to='/host/vans' className='vans-list-back'>
+      <Link to='/host/vans' className='vans-list-back'> {/* absolute path */}
         <i className='left-arrow'>&larr;</i>
         <span>Back to all vans</span>
       </Link>
@@ -40,27 +40,27 @@ export default function HostVanDetailLayout() {
           </div>
           <div className='van-detail-link'>
             <NavLink
-              to={{pathname:`/host/vans/${van.id}`, aboutProps: {name:'sanjai'}}}
+              to="." //relative paths
               className={({ isActive }) => (isActive ? "active" : null)}
               end
             >
               Details
             </NavLink>
             <NavLink
-              to={`/host/vans/${van.id}/pricing`}
+              to="pricing"
               className={({ isActive }) => (isActive ? "active" : null)}
             >
               Pricing
             </NavLink>
             <NavLink
-              to={`/host/vans/${van.id}/photos`}
+              to="photos"
               className={({ isActive }) => (isActive ? "active" : null)}
             >
               Photos
             </NavLink>
           </div>
           <div className="van-detail-outlet">
-            <Outlet />
+            <Outlet context={{...van}}/>
           </div>
         </div>
       ) : null}

@@ -1,24 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
+import { useOutletContext } from "react-router-dom";
 
 function HostVanDetail(props) {
-  const [van, setVan] = useState(null);
-  const { id: vanId } = useParams();
-  useEffect(() => {
-    if (vanId) {
-      fetch(`/api/vans/${vanId}`)
-        .then((resp) => {
-          if (resp.status === 200) {
-            return resp.json();
-          }
-        })
-        .then((data) => {
-          if (data) {
-            setVan(data.van);
-          }
-        });
-    }
-  }, []);
+  const van = useOutletContext(); //Like react context provider. offered in react router outlets.
   return (
     <>
       {van && (

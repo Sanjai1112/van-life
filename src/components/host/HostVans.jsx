@@ -4,7 +4,7 @@ import HostVan from "./HostVan";
 function HostVans() {
   const [hostVans, setHostVans] = useState([]);
   useEffect(() => {
-    fetch("/api/vans")
+    fetch("/api/host/vans")
       .then((res) => {
         if (res.status === 200) {
           return res.json();

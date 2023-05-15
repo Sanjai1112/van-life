@@ -4,23 +4,23 @@ export default function NavBar(props) {
   return (
     <nav className='navs'>
       <span className='left-nav'>
-        <Link to='/'>#VANLIFE</Link>
+        <Link to='.'>#VANLIFE</Link>
       </span>
       <span className='right-navs'>
         <NavLink
-          to='/host'
+          to='host' //relative paths
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           Host
         </NavLink>
         <NavLink
-          to='/about'
+          to='about'
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           About
         </NavLink>
         <NavLink
-          to='/vans'
+          to='vans'
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           Vans

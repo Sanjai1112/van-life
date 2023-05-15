@@ -21,7 +21,7 @@ export default function VanDetails(props) {
   }, []);
   return (
     <div className='van-full-details'>
-      <Link to='/vans/' className='vans-list-back'>
+      <Link to='/vans' className='vans-list-back'>
         <i className="left-arrow">&larr;</i>
         <span>Back to all vans</span>
       </Link>

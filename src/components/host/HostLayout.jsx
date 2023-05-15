@@ -6,26 +6,26 @@ export default function HostLayout() {
     <>
       <nav className='van-host-sub-routes'>
         <NavLink
-          to='/host'
+          to='.'
           end
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           Dashboard
         </NavLink>
         <NavLink
-          to='/host/income'
+          to='income' //relative paths
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           Income
         </NavLink>
         <NavLink
-          to='/host/vans'
+          to='vans'
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           Vans
         </NavLink>
         <NavLink
-          to='/host/reviews'
+          to='reviews'
           className={({ isActive }) => (isActive ? "active" : null)}
         >
           Reviews
