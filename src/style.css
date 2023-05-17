@@ -197,6 +197,30 @@ a {
   line-height: 34px;
 }
 
+.van-container .van-filter a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background: #FFEAD0;
+  padding: 12px 0px;
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 120px;
+  color: #161616;
+  text-transform: capitalize;
+}
+.van-container .van-filter .clear-filter {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  margin-left: 40px;
+}
+
 .van-list {
   display: grid;
   grid-template-columns: repeat(2, calc(50% - 15px));

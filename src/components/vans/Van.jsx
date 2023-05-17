@@ -4,7 +4,7 @@ export default function Van(props) {
   const { id, name, price, imageUrl, type } = props;
   return (
     <div className='van'>
-      <Link to={`/vans/${id}`}>
+      <Link to={id}>
         <img className='van-img' src={imageUrl} alt={name} id={id} />
         <div className='van-details'>
           <span className='van-name'>{name}</span>
